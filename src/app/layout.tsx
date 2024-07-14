@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Footer from "./_components/Footer/Footer";
+import { CgMenuGridO } from "react-icons/cg";
+import Navbar from "./_components/NavBar/NavBar";
+import Sidebar from "./_components/SideBar/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="ml-14 mt-14">
+          <Sidebar />
+          <div>
+            <Navbar />
+            {children}
+          </div>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
