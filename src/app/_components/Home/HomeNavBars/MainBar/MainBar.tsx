@@ -3,9 +3,11 @@ import React from "react";
 
 const MainBar = () => {
   return (
-    <div className="flex items-center px-6 py-4">
-      <div className="space-x-4 mr-4">
-        <span className="border p-2 rounded">HUB LOGO</span>
+    <div className="items-center px-6 py-4 hidden md:flex lg:flex w-full">
+      <div className="space-x-4 mr-4 flex items-center">
+        <span className="border p-2 rounded w-auto h-8 flex items-center">
+          LOGO
+        </span>
         <span>Hub site header title</span>
       </div>
       <div className="space-x-4">

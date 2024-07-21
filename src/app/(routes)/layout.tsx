@@ -1,7 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
 import React from "react";
-import Dropdown from "../_components/Dropdown";
 import MainBar from "../_components/Home/HomeNavBars/MainBar/MainBar";
 import SubBar from "../_components/Home/HomeNavBars/SubBar/SubBar";
 
@@ -13,9 +11,9 @@ const Homelayout = ({
   return (
     <>
       <MainBar />
-      <hr className="border border-gray-200 mr-20" />
+      <hr className="border border-gray-200 w-11/12" />
       <SubBar />
-      <div>{children}</div>
+      <div className="mt-5">{children}</div>
     </>
   );
 };

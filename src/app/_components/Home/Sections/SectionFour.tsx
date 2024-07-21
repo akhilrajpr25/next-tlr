@@ -10,9 +10,9 @@ const data = {
 
 const SectionFour = () => {
   return (
-    <div className="grid grid-cols-2 gap-10 mb-20">
-      <div className="bg-gray-100 h-96"></div>
-      <div className="space-y-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20 border md:border-none p-4 md:p-0 rounded md:border-none">
+      <div className="bg-gray-100 h-80 md:h-72 xl:h-96 rounded"></div>
+      <div className="space-y-2">
         <div className="font-bold">{data?.title}</div>
         <div className="font-light">{data?.summary}</div>
         <div className="text-sm font-semibold">{data?.description}</div>

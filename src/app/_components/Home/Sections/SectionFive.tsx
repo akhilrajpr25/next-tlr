@@ -54,11 +54,11 @@ const data = [
 const SectionFive = () => {
   return (
     <div className="grid grid-cols-12 mb-10">
-      <div className="col-span-9 pr-4">
-        <div className="grid grid-cols-3 grid-rows-2 gap-4">
+      <div className="col-span-12 md:col-span-9 md:pr-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 mb-4 md:mb-0">
           {data.map((item) => (
             <div key={item?.id} className="shadow-md rounded space-y-2">
-              <div className="h-44 bg-gray-100"></div>
+              <div className="h-36 sm:h-40 md:h-44 bg-gray-100"></div>
               <div className="p-2 space-y-4 text-xs">
                 <span className="bg-teal-700 text-white px-2 py-1 rounded">
                   {item?.title}
@@ -77,11 +77,11 @@ const SectionFive = () => {
           ))}
         </div>
       </div>
-      <div className="col-span-3 shadow-md flex flex-col justify-between h-full p-4 bg-gray-100">
+      <div className="col-span-12 md:col-span-3 shadow-md flex flex-col justify-between h-full p-4 bg-gray-100">
         {data.map((item, index) => (
           <>
             <div
-              className="h-full flex items-center font-semibold text-sm"
+              className="h-full flex items-center font-semibold text-sm p-5 md:p-0"
               key={item?.id}
             >
               Add content here

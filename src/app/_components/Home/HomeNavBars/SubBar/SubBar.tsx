@@ -16,10 +16,12 @@ const SubBar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="flex justify-between items-center px-6 py-4">
+    <div className="justify-between items-center px-6 py-4 hidden md:flex lg:flex">
       <div>
         <div className="space-x-4 mr-4 flex items-center">
-          <span className="border p-2 rounded">SITE LOGO</span>
+          <span className="border p-2 rounded w-auto h-8 flex items-center">
+            LOGO
+          </span>
           <h2 className="font-bold">Communication site title</h2>
           {navLinks.map((link) => {
             const isActive = pathName.startsWith(link.href);

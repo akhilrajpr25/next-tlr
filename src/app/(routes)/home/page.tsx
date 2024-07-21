@@ -9,7 +9,7 @@ import React from "react";
 const HomePage = () => {
   return (
     <>
-      <div className="mx-16 mb-10">
+      <div className="px-10 mb-10">
         <SectionOne />
         <SectionTwo />
         <SectionThree />

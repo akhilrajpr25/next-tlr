@@ -40,18 +40,18 @@ const SectionSix = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-12 gap-4 pl-16 pb-20 bg-gray-300">
-      <div className="col-span-4 p-6 space-y-4">
+    <div className="grid grid-cols-12 gap-4 p-10 md:pb-20 bg-gray-300 ">
+      <div className="col-span-12 lg:col-span-4 space-y-4">
         <div className="font-bold">{data?.title}</div>
         <div className="text-sm">{data?.summary}</div>
         <div className="text-sm">{data?.description}</div>
       </div>
 
-      <div className="col-span-8 space-y-4">
-        <div className=" grid grid-cols-3 p-6 gap-4">
+      <div className="col-span-12 lg:col-span-8 space-y-4">
+        <div className=" grid grid-cols-3 gap-4">
           {divContents[selected].map((content, index) => (
             <div key={index} className=" rounded-md bg-white">
-              <div className="h-40 bg-gray-400 rounded-t-md"></div>
+              <div className="h-32 sm:h-36 bg-gray-400 rounded-t-md"></div>
               <div className="p-4 text-sm">{content}</div>
             </div>
           ))}

@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
 
 const Sidebar = () => {
   return (
-    <div className="fixed top-14 left-0 h-screen w-14 bg-gray-200 flex flex-col items-center justify-between text-white">
+    <div className="hidden fixed top-14 left-0 h-screen w-14 bg-gray-200 items-center justify-between text-white space-x-4 md:flex flex-col z-10">
       <ul className="space-y-6 mt-6">
         <li className="w-full text-gray-600 cursor-pointer">
           <HomeIcon />
